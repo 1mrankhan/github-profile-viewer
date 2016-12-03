@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 class Search extends Component{
 
 	onSubmit(e){
-		e.preventDefault();
+		e.preventDefault();	
+
 		// console.log('submitted');
 		let username = this.refs.username.value.trim();
 		if(!username){
@@ -13,6 +14,8 @@ class Search extends Component{
 		this.props.onFormSubmit(username);
 		this.refs.username.value = '';
 	}
+
+
 	
 	render(){
 		return(
